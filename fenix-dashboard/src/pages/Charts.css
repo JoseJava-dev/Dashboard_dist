@@ -1,0 +1,66 @@
+.horizontal-kpi-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px; /* For scrollbar */
+  margin-bottom: 24px;
+}
+
+.horizontal-kpi-row .kpi-card {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.horizontal-kpi-row .kpi-card .card-icon-wrapper {
+  width: 90px;
+  height: 90px;
+}
+
+.horizontal-kpi-row .kpi-card .kpi-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.horizontal-kpi-row .kpi-card .kpi-label {
+  font-size: 0.85rem;
+}
+
+.horizontal-kpi-row .kpi-card .kpi-value {
+  font-size: 1.5rem;
+}
+
+.horizontal-kpi-row .kpi-card .kpi-subtitle {
+  font-size: 0.75rem;
+}
+
+.charts-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.chart-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.chart-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.chart-wrapper {
+  flex: 1;
+  min-height: 250px;
+  width: 100%;
+}

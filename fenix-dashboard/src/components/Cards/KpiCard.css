@@ -1,0 +1,56 @@
+.kpi-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.kpi-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  z-index: 2;
+}
+
+.kpi-label {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.kpi-value {
+  font-size: 5.5rem;
+  font-weight: 500;
+  color: #000;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.kpi-subtitle {
+  font-size: 0.8rem;
+}
+
+.kpi-icon-wrapper {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+.kpi-icon {
+  color: var(--color-primary);
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  opacity: 0.2;
+}
