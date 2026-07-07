@@ -13,7 +13,10 @@ const Layout = () => {
     <div className="layout">
       {/* Mobile Header for hamburger menu */}
       <div className="mobile-header">
-        <span className="mobile-brand">Fenix</span>
+        <div className="mobile-brand-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <img src="/logo.png.png" alt="Distribuidora Fénix Logo" style={{ height: '32px' }} />
+          <span className="mobile-brand" style={{ color: 'black', fontWeight: '700', fontSize: '1.1rem' }}>Distribuidora Fénix</span>
+        </div>
         <button onClick={toggleSidebar} className="menu-btn" aria-label="Toggle menu">
           {sidebarOpen ? <X size={24} /> : <Menu size={24} />}
         </button>

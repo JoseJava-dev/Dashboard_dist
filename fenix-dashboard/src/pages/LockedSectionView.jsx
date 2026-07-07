@@ -11,7 +11,7 @@ const LockedSectionView = ({ title }) => {
         </div>
         <h2 className="locked-title">{title}</h2>
         <p className="locked-message text-muted">
-          Esta sección está planificada como una posible expansión futura del dashboard.
+          Esta sección está planificada como una posible expansión futura de tu centro de métricas.
         </p>
       </div>
     </div>

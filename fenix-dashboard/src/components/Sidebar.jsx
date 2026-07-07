@@ -34,7 +34,7 @@ const Sidebar = ({ onClose }) => {
 
       <div className="sidebar-footer">
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', backgroundColor: 'transparent', padding: '0.75rem', borderRadius: '8px', justifyContent: 'center' }}>
-          <p style={{ margin: 0, color: '#999', fontSize: '0.9rem' }}>Desarrollado por Gapfixers</p>
+          <p style={{ margin: 0, color: 'black', fontSize: '0.9rem' }}>Desarrollado por Gapfixers</p>
           <img src={logoGapfixers} alt="Gapfixers logo" style={{ height: '24px', objectFit: 'contain' }} />
         </div>
       </div>
