@@ -47,7 +47,7 @@ export default defineConfig(({ mode }) => {
     server: {
       proxy: {
         '/api/chatwoot': {
-          target: 'https://dfchatwoot.sistemadistribuidorafenix.com',
+          target: env.VITE_CHATWOOT_URL,
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api\/chatwoot/, ''),
           configure: (proxy, options) => {

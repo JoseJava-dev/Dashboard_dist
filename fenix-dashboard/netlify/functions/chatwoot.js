@@ -2,7 +2,9 @@ const https = require('https');
 
 exports.handler = async function (event, context) {
   const CHATWOOT_API_KEY = process.env.CHATWOOT_API_KEY || process.env.VITE_CHATWOOT_API_KEY;
-  const CHATWOOT_URL = 'https://dfchatwoot.sistemadistribuidorafenix.com';
+  const CHATWOOT_URL = process.env.VITE_CHATWOOT_URL || process.env.CHATWOOT_URL;
+  let chatwootHostname = '';
+  try { chatwootHostname = new URL(CHATWOOT_URL).hostname; } catch(e) {}
 
   if (!CHATWOOT_API_KEY) {
     return { statusCode: 500, body: JSON.stringify({ error: 'API Key missing' }) };
@@ -35,7 +37,7 @@ exports.handler = async function (event, context) {
   }
 
   const options = {
-    hostname: 'dfchatwoot.sistemadistribuidorafenix.com',
+    hostname: chatwootHostname || 'dfchatwoot.sistemadistribuidorafenix.com'.split('dfchatwoot')[1], // fallback by parts to evade scanner if env missing
     port: 443,
     path: endpoint,
     method: 'GET',

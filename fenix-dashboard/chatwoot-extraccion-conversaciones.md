@@ -19,7 +19,7 @@ También hace falta el `account_id` numérico de la cuenta de Chatwoot.
 
 Base URL: si Chatwoot está self-hosted (como en Fenix), reemplazar
 `https://app.chatwoot.com` por el dominio propio, ej.
-`https://dfchatwoot.sistemadistribuidorafenix.com`.
+`[CHATWOOT_URL_AQUI]`.
 
 ---
 
@@ -214,7 +214,7 @@ function agruparPorMes(conversaciones, zona = 'America/Argentina/Buenos_Aires') 
 
 ```javascript
 const CONFIG = {
-  baseUrl: 'https://dfchatwoot.sistemadistribuidorafenix.com',
+  baseUrl: '[CHATWOOT_URL_AQUI]',
   accountId: 1,               // reemplazar por el account_id real
   apiToken: '{{TU_API_TOKEN}}', // idealmente desde una credencial/variable de entorno de n8n
 };
