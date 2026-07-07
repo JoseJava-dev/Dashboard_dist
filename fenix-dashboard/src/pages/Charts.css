@@ -60,7 +60,17 @@
 }
 
 .chart-wrapper {
-  flex: 1;
-  min-height: 250px;
+  height: 300px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .horizontal-kpi-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-x: visible;
+  }
+  .horizontal-kpi-row .kpi-card {
+    min-width: unset;
+  }
 }
